@@ -14,7 +14,7 @@ const Noteitem = (props) => {
                 <div className="flex">
                     <div className="ml-3 text-sm font-normal">
                         <span className="mb-1 text-sm font-semibold text-white">{note.title}</span>
-                        <div className="mb-2 text-sm font-normal">{note.description} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam adipisci alias vitae eum. Soluta accusantium</div>
+                        <div className="mb-2 text-sm font-normal">{note.description}</div>
 
                         <Link to="/" onClick={() => { updateNote(note) }} className="inline-flex px-2.5 py-1.5 text-xs font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4">Edit</Link>
 
