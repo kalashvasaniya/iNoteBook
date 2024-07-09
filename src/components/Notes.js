@@ -88,7 +88,7 @@ const Notes = () => {
                 <div className="flex justify-center">
                     {notes.length === 0 && 'Add notes to display'}
                 </div>
-                {notes.map((note) => {
+                {Array.isArray(note) && notes.map((note) => {
                     return <Noteitem key={note._id} updateNote={updateNote} note={note} />
                 })}
             </div>
